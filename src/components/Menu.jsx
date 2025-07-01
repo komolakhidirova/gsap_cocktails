@@ -36,6 +36,26 @@ const Menu = () => {
 		)
 	}, [currentIndex])
 
+	useGSAP(() => {
+		const parallaxTimeline = gsap.timeline({
+			scrollTrigger: {
+				trigger: '#menu',
+				start: 'top top',
+				end: 'bottom top',
+				scrub: true,
+			},
+		})
+		parallaxTimeline
+			.from('#m-left-leaf', {
+				x: -100,
+				y: 100,
+			})
+			.from('#m-right-leaf', {
+				x: 100,
+				y: 100,
+			})
+	})
+
 	const totalCocktails = sliderLists.length
 
 	const goToSlide = i => {
