@@ -52,13 +52,52 @@ const About = () => {
 							detail — from the first muddle to the final garnish. That care is
 							what turns a simple drink into something truly memorable.
 						</p>
-						<div>
-							<p className='md:text-3xl text-xl font-bold'>
-								<span>4.5</span>/5
-							</p>
-							<p className='text-sm text-white-100'>
-								More than +12000 customers
-							</p>
+
+						<div className='grid grid-cols-13'>
+							<div className='col-span-6'>
+								<ul className='flex gap-1 items-center'>
+									{Array(5)
+										.fill('null')
+										.map((_, i) => (
+											<li key={i}>
+												<img
+													src='/images/star.png'
+													alt='star'
+													className='size-[18px]'
+												/>
+											</li>
+										))}
+								</ul>
+								<p className='md:text-3xl text-xl font-bold '>4.5/5</p>
+								<p className='text-sm text-white-100'>
+									More than +12000 customers
+								</p>
+							</div>
+							<div className='border-l border-gray-400 col-span-1' />
+							<div className='col-span-6'>
+								<div className='mt-5 grid grid-cols-4 gap-0'>
+									<img
+										src='/images/profile1.png'
+										alt='profile-1'
+										className='size-[50px]'
+									/>
+									<img
+										src='/images/profile2.png'
+										alt='profile-2'
+										className='size-[50px] -ml-4'
+									/>
+									<img
+										src='/images/profile3.png'
+										alt='profile-3'
+										className='size-[50px] -ml-8'
+									/>
+									<img
+										src='/images/profile4.png'
+										alt='profile-4'
+										className='size-[50px] -ml-12'
+									/>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
