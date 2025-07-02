@@ -50,7 +50,7 @@ const Art = () => {
 				<h2 className='will-fade'>The ART</h2>
 
 				<div className='content'>
-					<ul className='space-y-4 will-fade'>
+					<ul className='space-y-4 will-fade mt-10'>
 						{goodLists.map((feature, index) => (
 							<li key={index} className='flex items-center gap-2'>
 								<img src='/images/check.png' alt='check' />
@@ -78,7 +78,7 @@ const Art = () => {
 				</div>
 
 				<div className='masked-container'>
-					<h2 className='will-fade'>Sip-Worthy Perfection</h2>
+					<h2 className='will-fade max-md:-top-108'>Sip-Worthy Perfection</h2>
 					<div id='masked-content' className='bottom-[-40px]'>
 						<h3>Made with Craft, Poured with Passion</h3>
 						<p>

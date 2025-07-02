@@ -104,14 +104,14 @@ body {
 		}
 
 		.arrow {
-			@apply absolute right-50 top-1/2 2xl:top-80 md:w-fit;
+			@apply absolute right-50 top-1/2 2xl:top-80 md:w-fit max-md:hidden;
 		}
 
 		.body {
 			@apply container mx-auto absolute left-1/2 -translate-x-1/2 lg:bottom-20 top-auto md:top-[30vh] flex justify-between items-end px-5;
 
 			.content {
-				@apply flex lg:flex-row flex-col w-full gap-10 justify-between items-center lg:items-end mx-auto;
+				@apply flex lg:flex-row flex-col w-full gap-10 justify-between items-center max-md:text-center lg:items-end mx-auto;
 
 				p:nth-of-type(2) {
 					@apply font-modern-negra text-6xl text-yellow max-w-xl;
@@ -309,7 +309,7 @@ body {
 			@apply flex flex-col justify-between items-center container mx-auto relative;
 
 			.arrows {
-				@apply flex items-center justify-between w-full absolute;
+				@apply flex items-center justify-between w-full absolute top-30;
 
 				button {
 					@apply text-white hover:text-yellow cursor-pointer transition-colors max-w-36;
