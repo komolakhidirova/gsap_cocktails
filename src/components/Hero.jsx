@@ -28,6 +28,11 @@ const Hero = () => {
 			stagger: 0.06,
 			delay: 1,
 		})
+		gsap.from('.arrow', {
+			opacity: 0,
+			y: -200,
+			delay: 2,
+		})
 		gsap
 			.timeline({
 				scrollTrigger: {
@@ -75,7 +80,7 @@ const Hero = () => {
 	return (
 		<>
 			<section id='hero' className='noisy'>
-				<h1 className='title'>Mojito</h1>
+				<h1 className='title'>MOJITO</h1>
 				<img
 					src='/images/hero-left-leaf.png'
 					alt='left-leaf'
@@ -86,6 +91,8 @@ const Hero = () => {
 					alt='right-leaf'
 					className='right-leaf'
 				/>
+				<img src='/images/arrow.png' alt='arrow' className='arrow' />
+
 				<div className='body'>
 					<div className='content'>
 						<div className='space-y-5 hidden md:block'>

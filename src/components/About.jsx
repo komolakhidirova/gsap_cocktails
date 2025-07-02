@@ -2,6 +2,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { SplitText } from 'gsap/all'
 import React from 'react'
+import { aboutLists } from '../../constants'
 
 const About = () => {
 	useGSAP(() => {
@@ -68,13 +69,30 @@ const About = () => {
 					<div className='noisy' />
 					<img src='/images/abt1.png' alt='grid-img-1' />
 				</div>
+				<div className='md:col-span-3 p-8 '>
+					<div className='noisy' />
+					<h1 className='text-3xl text-center mt-5 font-modern-negra'>
+						Crafted to Impress
+					</h1>
+					<div className='bg-gray-500 my-3 h-0.5' />
+					<div className='contents'>
+						<ul className='space-y-4'>
+							{aboutLists.map((feature, index) => (
+								<li key={index} className='flex items-center gap-2'>
+									<img
+										src='/images/check.png'
+										alt='check'
+										className='w-[10px]'
+									/>
+									<p>{feature}</p>
+								</li>
+							))}
+						</ul>
+					</div>
+				</div>
 				<div className='md:col-span-6'>
 					<div className='noisy' />
 					<img src='/images/abt2.png' alt='grid-img-2' />
-				</div>
-				<div className='md:col-span-3'>
-					<div className='noisy' />
-					<img src='/images/abt5.png' alt='grid-img-5' />
 				</div>
 			</div>
 			<div className='bottom-grid'>

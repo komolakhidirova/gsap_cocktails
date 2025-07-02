@@ -28,11 +28,24 @@ const Art = () => {
 				duration: 1,
 				ease: 'power1.inOut ',
 			})
+			.to('.cup-1', {
+				opacity: 1,
+				duration: 1,
+				y: -200,
+				ease: 'power1.inOut',
+			})
+			.to('.cup-2', {
+				opacity: 1,
+				y: 200,
+				ease: 'power1.inOut',
+			})
 			.to('#masked-content', { opacity: 1, duration: 1, ease: 'power1.inOut' })
 	})
 
 	return (
 		<div id='art'>
+			<img src='/images/cup-1.png' alt='cup-1' className='cup-1' />
+			<img src='/images/cup-2.png' alt='cup-2' className='cup-2' />
 			<div className='container mx-auto h-full pt-20'>
 				<h2 className='will-fade'>The ART</h2>
 
@@ -66,7 +79,7 @@ const Art = () => {
 
 				<div className='masked-container'>
 					<h2 className='will-fade'>Sip-Worthy Perfection</h2>
-					<div id='masked-content'>
+					<div id='masked-content' className='bottom-[-40px]'>
 						<h3>Made with Craft, Poured with Passion</h3>
 						<p>
 							This isn’t just a drink. It’s a carefully crafted moment made just

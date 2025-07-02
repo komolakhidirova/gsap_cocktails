@@ -8,7 +8,7 @@ const navLinks = [
 		title: 'About Us',
 	},
 	{
-		id: 'work',
+		id: 'art',
 		title: 'The Art',
 	},
 	{
@@ -93,6 +93,13 @@ const featureLists = [
 	'Expertly shaken & stirred',
 ]
 
+const aboutLists = [
+	'Perfectly balanced blends',
+	'Garnished to perfection',
+	'Ice-cold every time',
+	'Expertly shaken & stirred',
+]
+
 const goodLists = [
 	'Handpicked ingredients',
 	'Signature techniques',
@@ -170,6 +177,7 @@ const sliderLists = [
 ]
 
 export {
+	aboutLists,
 	cocktailLists,
 	featureLists,
 	goodLists,

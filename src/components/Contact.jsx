@@ -28,12 +28,15 @@ const Contact = () => {
 			})
 			.to('#f-right-leaf', {
 				y: '-50',
-				duration: 1,
 				ease: 'power1.inOut',
 			})
 			.to('#f-left-leaf', {
 				y: '-50',
-				duration: 1,
+				ease: 'power1.inOut',
+			})
+			.from('#drinks', {
+				opacity: 0,
+				x: '50',
 				ease: 'power1.inOut',
 			})
 	})
@@ -50,6 +53,7 @@ const Contact = () => {
 				alt='leaf-left'
 				id='f-left-leaf'
 			/>
+			<img src='/images/footer-drinks.png' alt='drinks' id='drinks' />
 			<div className='content'>
 				<h2>Where to Find Us</h2>
 				<div>
